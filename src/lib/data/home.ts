@@ -3,39 +3,40 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Name';
+export const name = 'Thomas';
 
-export const lastName = 'LastName';
+export const lastName = 'Vu';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
-
+	"Hi there! I\’m Thomas. I love pushing myself to grow, whether it\’s through personal projects or exploring new concepts in technology. "
+	"Outside of coding, I enjoy playing around with Linux and exploring human psychology. "
+	"I always up for a good conversation and I always stay open to help others however I can!";
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ platform: Platform.GitHub, link: 'https://github.com/thomasdkv' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
+		link: 'https://www.linkedin.com/thomasdkv'
 	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
-	},
+	// {
+	// 	platform: Platform.Twitter,
+	// 	link: 'https://twitter.com/'
+	// },
+	// {
+	// 	platform: Platform.StackOverflow,
+	// 	link: 'https://stackoverflow.com/'
+	// },
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
+		link: 'thomasv5201@gmail.com'
 	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
-	}
+	// {
+	// 	platform: Platform.Youtube,
+	// 	link: 'https://www.youtube.com'
+	// },
+	// {
+	// 	platform: Platform.Facebook,
+	// 	link: 'https://www.facebook.com'
+	// }
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
