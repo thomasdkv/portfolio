@@ -73,7 +73,15 @@ const Assets = {
 	Postcss: a('postcss.svg'),
 	Assembly: a('assembly.svg'),
 	Lua: a('lua.svg'),
-	Bash: a('bash.svg')
+	Bash: a('bash.svg'),
+	MySQL: a('mysql.svg'),
+	Git: a('git.svg'),
+	JUnit: a('junit.png'),
+	MicrosoftOffice: a('microsoftoffice.svg'),
+	VSCode: a('vscode.svg'),
+	Eclipse: a('eclipse.svg'),
+	IntelliJ: a('intellij.svg'),
+	PyCharm: a('pycharm.svg')
 };
 
 export default Assets;
