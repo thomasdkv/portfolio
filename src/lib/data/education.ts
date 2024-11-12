@@ -8,7 +8,7 @@ export const items: Array<Education> = [
 		location: 'Canada',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
+		organization: 'Western University',
 		period: { from: new Date(2022, 9, 1), to: new Date(2026, 5, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
