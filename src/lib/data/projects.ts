@@ -4,63 +4,90 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'doctalk-mern-reactjs-nodejs-mongodb-tailwind-expressjs',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			"DOCTALK is a web application designed to enhance doctor-patient communication by providing tools for conversation recording, transcription, and summarization. Developed with React, Node.js, MongoDB, and Tailwind CSS, this project combines a modern frontend with a powerful backend to streamline patient documentation for medical professionals.",
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			"DOCTALK is a web application designed to assist doctors in recording and transcribing patient conversations. ",
+		links: [{ to: 'https://devpost.com/software/medinote-7k1gmp', label: 'Devpost' }],
+		logo: Assets.DocTalk,
+		name: 'DocTalk',
 		period: {
-			from: new Date()
+			from: new Date(2024, 8 - 1, 16),
+			to: new Date(2024, 8 - 1, 18)
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('mern', 'tailwind', 'js', 'react', 'nodejs', 'mongodb', 'expressjs'),
+		type: 'Ignition Hacks 2024 Project',
 	},
 	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
+		slug: 'chatapplication-html-css-js-django',
+		color: '#006400',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			"A personal project developed using HTML, CSS, JavaScript, and Django to enable instant communication. This application provides users with seamless, live messaging in a streamlined and intuitive interface. The backend, powered by Django, handles real-time data flow efficiently, ensuring messages appear instantly for all participants without requiring manual refreshes.",
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+			'A real-time chat application made with Django framework.',
+		links: [{ to: 'https://github.com/thomasdkv/chat-app', label: 'GitHub' }],
+		logo: Assets.Django,
+		name: 'Real-time chat application',
 		period: {
-			from: new Date()
+			from: new Date(),
+			to: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
-		screenshots: [
-			{
-				label: 'screen 1',
-				src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '2',
-				src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '3',
-				src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '4',
-				src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '5',
-				src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '6',
-				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			}
-		]
-	}
+		skills: getSkills('html', 'css', 'js', 'django'),
+		type: 'Personal Project',
+	},
+	{
+		slug: 'dashboard-html-css-js-python',
+		color: '#9B30FF',
+		description:
+			"A custom dashboard integrating web scraping to collect course data from Western University and professor ratings from RateMyProf.com. This project provides students with a centralized view of course options and instructor feedback, helping them make informed decisions during course selection.",
+		shortDescription:
+			'A full-stack course dashboard application for Western University student',
+		links: [{ to: 'https://devpost.com/software/western-university-course-lookup', label: 'Devpost' }],
+		logo: Assets.Unknown,
+		name: 'Western University Course Dashboard',
+		period: {
+			from: new Date(2022, 11 - 1, 18),
+			to: new Date(2022, 11 - 1, 20)
+		},
+		skills: getSkills('html', 'css', 'js', 'python'),
+		type: 'Hacks Western 9 Project',
+	},
+	{
+		slug: 'ecology-html-css-reactnative-django-mern-nodejs-expressjs',
+		color: '#228B22',
+		description:
+			"Ecology assigns users daily eco-tasks they can complete to reduce their everyday carbon footprint. The app also features a daily community task where users can globally contribute to reach a goal, and compete for positions on a leaderboard. Every continuous day that tasks are completed, a streak is earned.",
+		shortDescription:
+			'An app focused on bringing people together to help the environment. Complete everyday eco-tasks alongside your community to make the world a better place. ',
+		links: [{ to: 'https://devpost.com/software/ecology-phycfo', label: 'Devpost' }],
+		logo: Assets.Ecology,
+		name: 'Ecology',
+		period: {
+			from: new Date(2024, 7 - 1, 27),
+			to: new Date(2024, 7 - 1, 27)
+		},
+		skills: getSkills('html', 'css', 'js', 'react', 'nodejs', 'mongodb', 'mern', 'expressjs'),
+		type: 'Starter Hack 2024 Project',
+	},
+	{
+		slug: 'studypartner-html-css-nextjs-nodejs-mongodb-mern-expressjs',
+		color: '#FF4500',
+		description:
+			"Study Partner Matcher help students improve their efficiency and make friends by matching them with a study partner based on their institution, availability, courses, and personality ",
+		shortDescription:
+			'A tool that assist student with finding study partners.',
+		links: [{ to: 'https://devpost.com/software/study-partner-matcher', label: 'Devpost' }],
+		logo: Assets.Nextjs,
+		name: 'Study Partner Matcher',
+		period: {
+			from: new Date(2024, 11 - 1, 9),
+			to: new Date(2024, 11 - 1, 10)
+		},
+		skills: getSkills('html', 'css', 'js', 'nextjs', 'nodejs', 'mongodb', 'mern', 'expressjs'),
+		type: 'CTRL+HACK+DEL Hackathon 2024',
+	},
 ];
 
 export const title = 'Projects';

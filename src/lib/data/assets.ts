@@ -81,7 +81,14 @@ const Assets = {
 	VSCode: a('vscode.svg'),
 	Eclipse: a('eclipse.svg'),
 	IntelliJ: a('intellij.svg'),
-	PyCharm: a('pycharm.svg')
+	PyCharm: a('pycharm.svg'),
+	CLion: a('clion.svg'),
+	Figma: a('figma.svg'),
+	Western: a('western.svg'),
+	Mern: a('mern.svg'),
+	DocTalk: a('doctalk.png'),
+	Ecology: a('ecology.png'),
+	Nextjs: a('nextjs.svg')
 };
 
 export default Assets;
