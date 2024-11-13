@@ -37,4 +37,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// }
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'react', 'nodejs', 'java', 'c', 'cpp');
+export const skills = getSkills('js', 'css', 'html', 'react', 'nodejs', 'java', 'c', 'c++');

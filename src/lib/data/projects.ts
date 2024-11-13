@@ -45,7 +45,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'A full-stack course dashboard application for Western University student',
 		links: [{ to: 'https://devpost.com/software/western-university-course-lookup', label: 'Devpost' }],
-		logo: Assets.Unknown,
+		logo: Assets.Western,
 		name: 'Western University Course Dashboard',
 		period: {
 			from: new Date(2022, 11 - 1, 18),
@@ -79,14 +79,48 @@ export const items: Array<Project> = [
 		shortDescription:
 			'A tool that assist student with finding study partners.',
 		links: [{ to: 'https://devpost.com/software/study-partner-matcher', label: 'Devpost' }],
-		logo: Assets.Nextjs,
+		logo: Assets.Unknown,
 		name: 'Study Partner Matcher',
 		period: {
 			from: new Date(2024, 11 - 1, 9),
 			to: new Date(2024, 11 - 1, 10)
 		},
 		skills: getSkills('html', 'css', 'js', 'nextjs', 'nodejs', 'mongodb', 'mern', 'expressjs'),
-		type: 'CTRL+HACK+DEL Hackathon 2024',
+		type: 'CTRL+HACK+DEL Hackathon 2024 Project',
+	},
+	{
+		slug: 'game-godot',
+		color: '#40E0D0',
+		description:
+			"In a world, barred with pain and suffering, a small village has created an unknown potion recipe, that grants an endless source of joy to withstand this cruel world. A large group of evil raiders hated the sound of this, and wanted to put an end to the village. Unexpectedly, the village fought back, defending their recipe and taking down the raiders. now, you are tasked with a significant operation. Finish the job. Take down the village.",
+		shortDescription:
+			'Unleash your inner villain and bring the world to its knees.',
+		links: [{ to: 'https://ashtonfranklin04.itch.io/elemental-flip', label: 'Gamejam' }],
+		logo: Assets.ElementalFlip,
+		name: 'Elemental Flip',
+		period: {
+			from: new Date(2024, 3 - 1, 22),
+			to: new Date(2024, 3 - 1, 30)
+		},
+		skills: getSkills('godot'),
+		type: 'LoJam x GDS 2024 Game',
+	},
+	{
+		slug: 'maze-game-java',
+		color: '#40E0D0',
+		description:
+			"A maze game in Java using Dijkstra algorithm to collect all coins and ﬁnd the shortest path to the exit while avoiding hazards.",
+		shortDescription:
+			'Collect all the coins, avoid the obstacles, and escape the maze',
+		links: [],
+		logo: Assets.Java,
+		name: 'Maze Game',
+		period: {
+			from: new Date(2024, 5 - 1, 1),
+			to: new Date(2024, 5 - 1, 1)
+		},
+		skills: getSkills('java'),
+		type: 'Maze Game',
 	},
 ];
 

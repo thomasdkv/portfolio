@@ -158,6 +158,17 @@ export const items = [
 		category: 'devtools'
 	}),
 	defineSkill({
+		slug: 'godot',
+		color: 'turquoise',
+		description:
+			"Godot is an open-source game engine that provides a user-friendly interface for developing both 2D and 3D games. " +
+			"It supports multiple programming languages, including GDScript, C#, and VisualScript, offering flexibility for developers of all skill levels. " +
+			"With a focus on ease of use, performance, and rapid development, Godot is a popular choice for indie game developers and small studios.",
+		logo: Assets.Godot,
+		name: 'Godot',
+		category: 'devtools'
+	}),
+	defineSkill({
 		slug: 'html',
 		color: 'orange',
 		description:
@@ -177,6 +188,17 @@ export const items = [
 		logo: Assets.IntelliJ,
 		name: 'IntelliJ IDEA',
 		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'blue',
+		description:
+			"Java is a widely-used, object-oriented programming language known for its platform independence, achieved through the 'write once, run anywhere' philosophy. " +
+			"It is commonly used for building web applications, mobile apps (especially Android), enterprise software, and large-scale systems. " +
+			"Java's robust ecosystem, including libraries, frameworks, and development tools, makes it a versatile and reliable choice for developers ",
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'js',

@@ -88,7 +88,9 @@ const Assets = {
 	Mern: a('mern.svg'),
 	DocTalk: a('doctalk.png'),
 	Ecology: a('ecology.png'),
-	Nextjs: a('nextjs.svg')
+	Nextjs: a('nextjs.svg'),
+	ElementalFlip: a('elemental-flip.png'),
+	Godot: a('godot.svg')
 };
 
 export default Assets;
