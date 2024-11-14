@@ -3,7 +3,8 @@
 </script>
 
 <div class="pdf-fullpage">
-	<iframe src={data} class="pdf-iframe" title="PDF Full Page Preview"></iframe>
+	<!-- <iframe src={data} class="pdf-iframe" title="PDF Full Page Preview"></iframe> -->
+	<object data={data} type="application/pdf" class="pdf-iframe" title="PDF Full Page Preview"></object>
 </div>
 
 <style>

@@ -16,7 +16,8 @@
 			</a>
 
 			<!-- PDF Preview -->
-			<iframe src={data} class="pdf-preview" title="PDF Preview"></iframe>
+			<!-- <iframe src={data} class="pdf-preview" title="PDF Preview"></iframe> -->
+			<object data={data} type="application/pdf" class="pdf-preview" title="PDF Preview"></object>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
 		{/if}
