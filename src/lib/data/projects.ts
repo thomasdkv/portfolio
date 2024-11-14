@@ -32,7 +32,7 @@ export const items: Array<Project> = [
 		name: 'Lox Language',
 		period: {
 			from: new Date(2024, 9 - 1, 1),
-			to: new Date()
+			// to: new Date()
 		},
 		skills: getSkills('c', 'java'),
 		type: 'Personal Project',
@@ -48,8 +48,8 @@ export const items: Array<Project> = [
 		logo: Assets.Django,
 		name: 'Real-time chat application',
 		period: {
-			from: new Date(),
-			to: new Date()
+			from: new Date(2024, 7 - 1, 1),
+			to: new Date(2024, 7 - 1, 3)
 		},
 		skills: getSkills('html', 'css', 'js', 'django', 'python'),
 		type: 'Personal Project',
