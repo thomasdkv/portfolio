@@ -33,8 +33,13 @@
 			</span>
 		</a>
 		<div class="flex-1 block overflow-hidden md:hidden whitespace-nowrap text-ellipsis text-center">
-			{HOME.name}
-			{HOME.lastName}
+			<a
+				href={`${base}/`}
+				class="text-inherit no-underline"
+			>
+				{HOME.name}
+				{HOME.lastName}
+			</a>
 		</div>
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item (item.title)}
