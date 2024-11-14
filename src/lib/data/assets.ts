@@ -90,7 +90,8 @@ const Assets = {
 	Ecology: a('ecology.png'),
 	Nextjs: a('nextjs.svg'),
 	ElementalFlip: a('elemental-flip.png'),
-	Godot: a('godot.svg')
+	Godot: a('godot.svg'),
+	Lox: a('lox.png')
 };
 
 export default Assets;

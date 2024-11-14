@@ -21,6 +21,23 @@ export const items: Array<Project> = [
 		type: 'Ignition Hacks 2024 Project',
 	},
 	{
+		slug: 'lox-java-c',
+		color: '#4A90E2',
+		description:
+			"This personal project is an ongoing journey into the fundamentals of programming languages, covering every aspect from syntax and grammar to compilation. It starts from foundational language grammar and syntax scanning, through expression parsing and interpreter development, to advanced features like garbage collection, language optimization, and constructing a bytecode virtual machine. It’s been a hands-on way to learn about language structure and implementation details. This project wouldn’t be possible without the invaluable guidance of Robert Nystrom's book, Crafting Interpreters.",
+		shortDescription:
+			"This personal project is an ongoing journey into the fundamentals of programming languages, covering every aspect from syntax and grammar to compilation. It starts from foundational language grammar and syntax scanning, through expression parsing and interpreter development, to advanced features like garbage collection, language optimization, and constructing a bytecode virtual machine.",
+		links: [{ to: 'https://github.com/thomasdkv/Lox', label: 'GitHub' }],
+		logo: Assets.Lox,
+		name: 'Lox Language',
+		period: {
+			from: new Date(2024, 9 - 1, 1),
+			to: new Date()
+		},
+		skills: getSkills('c', 'java'),
+		type: 'Personal Project',
+	},
+	{
 		slug: 'chatapplication-html-css-js-django',
 		color: '#006400',
 		description:
@@ -34,7 +51,7 @@ export const items: Array<Project> = [
 			from: new Date(),
 			to: new Date()
 		},
-		skills: getSkills('html', 'css', 'js', 'django'),
+		skills: getSkills('html', 'css', 'js', 'django', 'python'),
 		type: 'Personal Project',
 	},
 	{
