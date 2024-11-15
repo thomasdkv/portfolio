@@ -66,9 +66,9 @@
 			{/if}
 		
 			<div class="pdf-preview">
-				<!-- <div class="pdf-fullpage"> -->
+				<div class="pdf-fullpage">
 					<canvas bind:this={canvas}></canvas>
-				<!-- </div> -->
+				</div>
 			</div>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
@@ -91,12 +91,20 @@
 		.pdf-preview {
 			width: 100%;
 			max-width: 800px;
-			height: 800px;
-			border: 1px solid #ccc;
-			border-radius: 8px;
+			// height: 800px;
+			// border: 2px solid #ccc;
+			// border-radius: 8px;
 			margin-top: 20px;
 		}
-		
+
+		.pdf-fullpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Make sure the canvas stretches */
+    max-width: 100%; /* Prevent the canvas from stretching too much */
+  	}
+
 		canvas {
 			border: 1px solid #ccc;
 			width: 100%;

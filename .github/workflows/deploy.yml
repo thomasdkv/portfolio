@@ -14,10 +14,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Set up Node.js v22
+      - name: Set up Node.js LTS
         uses: actions/setup-node@v3  # Set up Node.js
         with:
-          node-version: '22.x'  # Install Node.js v22
+          node-version: 'lts'  # Install Node.js v22
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
