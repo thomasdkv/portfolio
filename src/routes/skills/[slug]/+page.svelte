@@ -83,7 +83,15 @@
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
 				<div class="px-10px m-y-5">
-					{#if data.skill.description}
+					{#if Array.isArray(data.skill.description)}
+						<!-- Added the loop for the list -->
+						{#each data.skill.description as desc}
+							<li style="margin-left: 10px; padding-left: 10px;">
+								<Markdown content={desc ?? 'This place is yet to be filled...'} />
+							</li>
+						{/each}
+					{:else if typeof data.skill.description === 'string'}
+						<!-- If description is a string, render it as Markdown -->
 						<Markdown content={data.skill.description ?? 'This place is yet to be filled...'} />
 					{:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">

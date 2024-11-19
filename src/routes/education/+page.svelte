@@ -20,7 +20,8 @@
 		result = items.filter((it) => {
 			return (
 				it.degree.toLowerCase().includes(s) ||
-				it.description.toLowerCase().includes(s) ||
+        (typeof it.description === "string" && it.description.toLowerCase().includes(s)) ||
+        (Array.isArray(it.description) && it.description.some((desc) => desc.toLowerCase().includes(s))) ||
 				it.location.toLowerCase().includes(s) ||
 				it.name.toLowerCase().includes(s) ||
 				it.organization.toLowerCase().includes(s) ||

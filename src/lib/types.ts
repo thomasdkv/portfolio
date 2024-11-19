@@ -28,7 +28,7 @@ export interface Item<S extends string = string> {
 	name: string;
 	logo: Asset;
 	shortDescription: string;
-	description: string;
+	description: string | string[]; // Added string[]
 	screenshots?: Array<{ src: string; label: string }>;
 }
 

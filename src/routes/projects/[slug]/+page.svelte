@@ -79,8 +79,16 @@
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
 				<div class="px-10px m-y-5">
-					{#if data.project.description}
-						<Markdown content={data.project.description} />
+					{#if Array.isArray(data.project.description)}
+						<!-- Added the loop for the list -->
+						{#each data.project.description as desc}
+							<li style="margin-left: 10px; padding-left: 10px;">
+								<Markdown content={desc ?? 'This place is yet to be filled...'} />
+							</li>
+						{/each}
+					{:else if typeof data.project.description === 'string'}
+						<!-- If description is a string, render it as Markdown -->
+						<Markdown content={data.project.description ?? 'This place is yet to be filled...'} />
 					{:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />

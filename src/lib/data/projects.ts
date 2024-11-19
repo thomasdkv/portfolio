@@ -6,8 +6,10 @@ export const items: Array<Project> = [
 	{
 		slug: 'doctalk-mern-reactjs-nodejs-mongodb-tailwind-expressjs',
 		color: '#5e95e3',
-		description:
-			"DOCTALK is a web application designed to enhance doctor-patient communication by providing tools for conversation recording, transcription, and summarization. Developed with React, Node.js, MongoDB, and Tailwind CSS, this project combines a modern frontend with a powerful backend to streamline patient documentation for medical professionals.",
+		description: [
+			"DOCTALK is a web application designed to enhance doctor-patient communication by providing tools for conversation recording, transcription, and summarization.",
+			"Developed with React, Node.js, MongoDB, and Tailwind CSS, this project combines a modern frontend with a powerful backend to streamline patient documentation for medical professionals.",
+		],
 		shortDescription:
 			"DOCTALK is a web application designed to assist doctors in recording and transcribing patient conversations. ",
 		links: [{ to: 'https://devpost.com/software/medinote-7k1gmp', label: 'Devpost' }],
@@ -23,8 +25,11 @@ export const items: Array<Project> = [
 	{
 		slug: 'lox-java-c',
 		color: '#4A90E2',
-		description:
-			"This personal project is an ongoing journey into the fundamentals of programming languages, covering every aspect from syntax and grammar to compilation. It starts from foundational language grammar and syntax scanning, through expression parsing and interpreter development, to advanced features like garbage collection, language optimization, and constructing a bytecode virtual machine. It’s been a hands-on way to learn about language structure and implementation details. This project wouldn’t be possible without the invaluable guidance of Robert Nystrom's book, Crafting Interpreters.",
+		description: [
+			"This personal project is an ongoing journey into the fundamentals of programming languages, covering every aspect from syntax and grammar to compilation.",
+			"It starts from foundational language grammar and syntax scanning, through expression parsing and interpreter development, to advanced features like garbage collection, language optimization, and constructing a bytecode virtual machine.",
+			"It’s been a hands-on way to learn about language structure and implementation details. This project wouldn’t be possible without the invaluable guidance of Robert Nystrom's book, Crafting Interpreters.",
+		],
 		shortDescription:
 			"This personal project is an ongoing journey into the fundamentals of programming languages, covering every aspect from syntax and grammar to compilation. It starts from foundational language grammar and syntax scanning, through expression parsing and interpreter development, to advanced features like garbage collection, language optimization, and constructing a bytecode virtual machine.",
 		links: [{ to: 'https://github.com/thomasdkv/Lox', label: 'GitHub' }],
@@ -40,8 +45,11 @@ export const items: Array<Project> = [
 	{
 		slug: 'chatapplication-html-css-js-django',
 		color: '#006400',
-		description:
-			"A personal project developed using HTML, CSS, JavaScript, and Django to enable instant communication. This application provides users with seamless, live messaging in a streamlined and intuitive interface. The backend, powered by Django, handles real-time data flow efficiently, ensuring messages appear instantly for all participants without requiring manual refreshes.",
+		description: [
+			"A personal project developed using HTML, CSS, JavaScript, and Django to enable instant communication.",
+			"This application provides users with seamless, live messaging in a streamlined and intuitive interface.",
+			"The backend, powered by Django, handles real-time data flow efficiently, ensuring messages appear instantly for all participants without requiring manual refreshes.",
+		],
 		shortDescription:
 			'A real-time chat application made with Django framework.',
 		links: [{ to: 'https://github.com/thomasdkv/chat-app', label: 'GitHub' }],
@@ -57,8 +65,10 @@ export const items: Array<Project> = [
 	{
 		slug: 'dashboard-html-css-js-python',
 		color: '#9B30FF',
-		description:
-			"A custom dashboard integrating web scraping to collect course data from Western University and professor ratings from RateMyProf.com. This project provides students with a centralized view of course options and instructor feedback, helping them make informed decisions during course selection.",
+		description:[
+			"A custom dashboard integrating web scraping to collect course data from Western University and professor ratings from RateMyProf.com.",
+			"This project provides students with a centralized view of course options and instructor feedback, helping them make informed decisions during course selection.",
+		],
 		shortDescription:
 			'A full-stack course dashboard application for Western University student',
 		links: [{ to: 'https://devpost.com/software/western-university-course-lookup', label: 'Devpost' }],
@@ -74,8 +84,11 @@ export const items: Array<Project> = [
 	{
 		slug: 'ecology-html-css-reactnative-django-mern-nodejs-expressjs',
 		color: '#228B22',
-		description:
-			"Ecology assigns users daily eco-tasks they can complete to reduce their everyday carbon footprint. The app also features a daily community task where users can globally contribute to reach a goal, and compete for positions on a leaderboard. Every continuous day that tasks are completed, a streak is earned.",
+		description:[
+			"Ecology assigns users daily eco-tasks they can complete to reduce their everyday carbon footprint.",
+			"The app also features a daily community task where users can globally contribute to reach a goal, and compete for positions on a leaderboard.",
+			"Every continuous day that tasks are completed, a streak is earned.",
+		],
 		shortDescription:
 			'An app focused on bringing people together to help the environment. Complete everyday eco-tasks alongside your community to make the world a better place. ',
 		links: [{ to: 'https://devpost.com/software/ecology-phycfo', label: 'Devpost' }],
@@ -108,8 +121,12 @@ export const items: Array<Project> = [
 	{
 		slug: 'game-godot',
 		color: '#40E0D0',
-		description:
-			"In a world, barred with pain and suffering, a small village has created an unknown potion recipe, that grants an endless source of joy to withstand this cruel world. A large group of evil raiders hated the sound of this, and wanted to put an end to the village. Unexpectedly, the village fought back, defending their recipe and taking down the raiders. now, you are tasked with a significant operation. Finish the job. Take down the village.",
+		description:[
+			"In a world, barred with pain and suffering, a small village has created an unknown potion recipe, that grants an endless source of joy to withstand this cruel world.",
+			"A large group of evil raiders hated the sound of this, and wanted to put an end to the village.",
+			"Unexpectedly, the village fought back, defending their recipe and taking down the raiders. now, you are tasked with a significant operation.",
+			"Finish the job. Take down the village.",
+		],
 		shortDescription:
 			'Unleash your inner villain and bring the world to its knees.',
 		links: [{ to: 'https://ashtonfranklin04.itch.io/elemental-flip', label: 'Gamejam' }],
