@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import * as pdfjsLib from 'pdfjs-dist';
   import { base } from '$app/paths';
+  import Chip from '$lib/components/Chip/Chip.svelte';
+
 
   // Path to your PDF worker script
   let workerSrc = `${base}/documents/pdf.worker.mjs`;
@@ -44,22 +46,43 @@
     // Once rendering is complete, set loading to false
     loading = false;
   });
+
+  function isMobileDevice(): boolean {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /iphone|ipod|android|windows phone|blackberry|mobile/i.test(userAgent);
+  }
+
+  const deviceType = isMobileDevice() ? "Phone" : "PC";
 </script>
 
 <CommonPage {title}>
-	{#if loading}
-  <p>Loading PDF...</p>
-	{/if}
+  {#if data}
+    {#if deviceType == "Phone"}
+      {#if loading}
+        <p>Loading PDF...</p>
+      {/if}
 
-	<div class="pdf-container">
-		<div class="pdf-fullpage">
-			<canvas bind:this={canvas}></canvas>
-		</div>
-	</div>
+      <div class="pdf-container">
+        <div class="pdf-fullpage">
+          <canvas bind:this={canvas}></canvas>
+        </div>
+      </div>
+    {:else}
+      <iframe src={data} class="iframe-full" title={title}></iframe>
+    {/if}
+  {:else}
+    <Chip>Ooops! no CV at the moment.</Chip>
+  {/if}
 </CommonPage>
 
 
 <style>
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
   .pdf-container {
     display: flex;
     justify-content: center;
@@ -80,5 +103,12 @@
     border: 1px solid #ccc;
     width: 100%;
     height: auto;
+  }
+
+  /* Full-screen iframe */
+  .iframe-full {
+    width: 100%;
+    height: 100vh;  /* Full viewport height */
+    border: none;
   }
 </style>
