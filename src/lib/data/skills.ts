@@ -72,22 +72,22 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'c,,',
+		slug: 'c++',
 		color: 'blue',
 		description:[
-			"C,, is a high-performance, object-oriented programming language that builds on the C language by adding features like classes, inheritance, and polymorphism. " ,
+			"C++ is a high-performance, object-oriented programming language that builds on the C language by adding features like classes, inheritance, and polymorphism. " ,
 			"It is widely used in system software, game development, real-time applications, and performance-critical software due to its ability to provide low-level memory control and high efficiency. " ,
-			"C,, supports both procedural and object-oriented programming paradigms, making it versatile for a wide range of applications.",
+			"C++ supports both procedural and object-oriented programming paradigms, making it versatile for a wide range of applications.",
 		],
 		logo: Assets.Cpp,
-		name: 'C,,',
+		name: 'C++',
 		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'clion',
 		color: 'teal',
 		description:[
-			"CLion is an IDE developed by JetBrains specifically for C and C,, development. " ,
+			"CLion is an IDE developed by JetBrains specifically for C and C++ development. " ,
 			"It provides intelligent code assistance, including code completion, real-time code analysis, and powerful refactoring tools. " ,
 			"CLion integrates with CMake and supports a variety of compilers and build systems, making it ideal for both small projects and large-scale applications. " ,
 			"It’s a powerful tool for low-level programming and system development.",
@@ -126,7 +126,7 @@ export const items = [
 		description:[
 			"Eclipse IDE is a widely used open-source Integrated Development Environment (IDE) primarily for Java development. " ,
 			"It offers powerful features like code completion, debugging, and refactoring tools. " ,
-			"Eclipse supports a wide range of programming languages and is extensible with plugins, making it suitable for various development tasks, including Java, C,,, and web development.",
+			"Eclipse supports a wide range of programming languages and is extensible with plugins, making it suitable for various development tasks, including Java, C++, and web development.",
 		],
 		logo: Assets.Eclipse,
 		name: 'Eclipse IDE',
